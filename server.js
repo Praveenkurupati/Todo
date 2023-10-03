@@ -1,4 +1,4 @@
-// const serverless = require('serverless-http')
+const serverless = require('serverless-http')
 
 
 const app = require('./src/app')
@@ -12,4 +12,4 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-// module.exports.handler = serverless(app)
+module.exports.handler = serverless(app)
